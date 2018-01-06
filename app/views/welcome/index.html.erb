@@ -1,2 +1,14 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+<br>
+<%= code title: 'Hello World' do %>
+  class Foo
+    def initialize(subject = nil)
+      @subject = subject
+    end
+
+    def hello
+      puts "Hello #{@subject || 'World'}"
+    end
+  end
+<% end %>
