@@ -3,8 +3,9 @@ module ApplicationHelper
     source = capture(&block)
 
     tag.figure(
-      tag.figcaption(title) +
-      source
+      tag.figcaption(title, class: 'title') +
+      source,
+      class: 'code-example'
     )
   end
 end

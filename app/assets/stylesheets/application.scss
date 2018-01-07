@@ -1,4 +1,19 @@
 body { margin: 0; padding: 0; }
+
+$blue-jeans:  #5D9CEC;
+$aqua:        #4FC1E9;
+$mint:        #48CFAD;
+$grass:       #A0D468;
+$sunflower:   #FFCE54;
+$bittersweet: #FC6E51;
+$grapefruit:  #ED5565;
+$lavendar:    #AC92EC;
+$pink-rose:   #EC87C0;
+$light-gray:  #F5F7FA;
+$medium-gray: #CCD1D9;
+$gray:        #656D78;
+$dark-gray:   #434A54;
+
 #page {
   width: 720px;
   margin: 0 auto;
@@ -6,5 +21,22 @@ body { margin: 0; padding: 0; }
   font-family: 'Source Sans Pro', sans-serif;
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Spectral', serif;
+  }
+}
+
+figure.code-example {
+  font-family: 'Source Code Pro', monospace;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  figcaption.title {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: $light-gray;
+    text-align: center;
+    border: 1px solid $dark-gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 2px 0;
   }
 }
