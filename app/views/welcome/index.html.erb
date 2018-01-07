@@ -1,7 +1,7 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
 <br>
-<%= code title: 'Hello World' do %>
+<%= code title: 'hello_world.rb', language: 'ruby' do %>
   class Foo
     def initialize(subject = nil)
       @subject = subject
@@ -11,4 +11,17 @@
       puts "Hello #{@subject || 'World'}"
     end
   end
+
+  Foo.new('World').hello
+<% end %>
+<br>
+<%= code title: 'hello_world.js', language: 'javascript' do %>
+  function Foo(subject) {
+    this.subject = subject;
+    this.hello = function() {
+      console.log('Hello ' + (this.subject || 'World'));
+    }
+  }
+
+  (new Foo('World')).hello();
 <% end %>
