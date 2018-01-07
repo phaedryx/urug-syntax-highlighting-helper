@@ -1,5 +1,10 @@
 module ApplicationHelper
   def code(title: nil, &block)
-    capture(&block)
+    source = capture(&block)
+
+    tag.figure(
+      tag.figcaption(title) +
+      source
+    )
   end
 end
