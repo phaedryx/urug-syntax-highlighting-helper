@@ -28,6 +28,13 @@ figure.code-example {
   width: 100%;
   margin: 0;
   padding: 0;
+  margin-bottom: 2em;
+
+  .overflow {
+    overflow-x: scroll;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 
   figcaption.title {
     font-family: 'Source Sans Pro', sans-serif;
@@ -36,7 +43,7 @@ figure.code-example {
     border: 1px solid $dark-gray;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding: 2px 0;
+    padding: 3px 0;
   }
 
   table.code {
@@ -44,8 +51,6 @@ figure.code-example {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     line-height: 1rem;
     font-family: 'Source Code Pro', monospace;
     background: $dark-gray;
@@ -59,6 +64,8 @@ figure.code-example {
       text-align: right;
       color: $gray;
       border-right: 1px solid $gray;
+      width: 3rem;
+      min-width: 3rem;
     }
 
     td.source {

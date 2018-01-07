@@ -14,8 +14,9 @@
 
   Foo.new('World').hello
 <% end %>
-<br>
 <%= code title: 'hello_world.js', language: 'javascript' do %>
+  // a comment that is really long so that I can test what it is like to have the overflow scroll
+
   function Foo(subject) {
     this.subject = subject;
     this.hello = function() {
